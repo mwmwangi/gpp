@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <h2 class="text-center mb-4">Buy us a Coffee</h2>
+            {% if error %}
+              <div class="alert alert-danger text-center">
+                {{ error }}
+              </div>
+            {% endif %}
+            <form method="post" action="{% url 'mpesa_payment' %}">
+              {% csrf_token %}
+              <div class="mb-3">
+                <label for="phone_number" class="form-label">Phone Number:</label>
+                <input type="text" id="phone_number" name="phone_number" class="form-control" placeholder="Enter your phone number" required>
+              </div>
+              <div class="mb-3">
+                <label for="amount" class="form-label">Amount:</label>
+                <input type="number" id="amount" name="amount" class="form-control" placeholder="Enter amount" required>
+              </div>
+              <button style="background-color: rgba(240,168,13,0.85);color: black;border-radius: 30px" type="submit" class=" w-100">Buy Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

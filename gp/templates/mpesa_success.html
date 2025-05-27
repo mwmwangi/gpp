@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="container">
+    <h2>Payment Initiated</h2>
+    <p>Your MPesa payment request has been sent. Check your phone for the prompt.</p>
+    <p><strong>API Response:</strong> {{ response }}</p>
+    <a href="{% url 'index' %}">Return to Home</a>
+  </div>
+{% endblock %}

@@ -1,0 +1,934 @@
+{% extends "base.html" %}
+{% block title %}HOME{% endblock %}
+
+
+
+
+
+{% block content %}
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="../../static/assets/img/software-developer-6521720_1280.jpg" alt="" data-aos="fade-in">
+
+      <div class="container">
+
+
+        <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-xl-6 col-lg-8">
+            <div class="text-center text-white mt-10">
+   <h1 id="heroTitle"></h1>
+
+<script>
+  let text = "Welcome to GP Digital Marketing!";
+  let index = 0;
+
+  function typeWriter() {
+    if (index < text.length) {
+      document.getElementById("heroTitle").innerHTML += text.charAt(index);
+      index++;
+      setTimeout(typeWriter, 100);
+    }
+  }
+
+  typeWriter();
+</script>
+
+    <!-- Primary CTA -->
+    <div class="mt-6">
+        <a href="#services"
+          style="color: goldenrod;font-size: 20px" class="px-8 py-3 bg-yellow-500 text-black font-semibold text-lg rounded-lg transition-all duration-300 ease-in-out hover:bg-yellow-600 hover:scale-105 shadow-lg">
+           Get Started →
+        </a>
+    </div>
+
+    <!-- Secondary CTA -->
+    <div class="mt-4">
+        <a href="#services"
+           class="text-white text-lg underline transition-all duration-300 ease-in-out hover:text-yellow-400">
+           Discover Our Services
+        </a>
+    </div>
+</div>
+
+<!--            <h2 style="font-family: 'Poppins'">Innovative Digital Solutions With GP<span>.</span></h2>-->
+<!--            <p style="font-family: 'Montserrat';font-size: 30px">We're a crew of creative digital marketers bringing ideas to life!</p>-->
+          </div>
+        </div>
+
+        <div class="row gy-4 mt-5 justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <i class="bi bi-binoculars"></i>
+              <h3><a href="">Search Engine Optimization</a></h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon-box">
+              <i class="bi bi-bullseye"></i>
+              <h3><a href="">Content Marketing</a></h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-box">
+              <i class="bi bi-fullscreen-exit"></i>
+              <h3><a href="">Social Media Marketing</a></h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon-box">
+              <i class="bi bi-card-list"></i>
+              <h3><a href="">Email Marketing</a></h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="700">
+            <div class="icon-box">
+              <i class="bi bi-gem"></i>
+              <h3><a href="">Paid Advertising </a></h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+    <div class="container" data-aos="fade-up" data-aos-delay="100"
+    style="display: flex; align-items: center; justify-content: space-between; padding: 50px; background-color: #f9f9f9; border-radius: 10px;">
+
+    <!-- Image Section -->
+    <div class="col-lg-6 order-1 order-lg-2" style="flex: 1; text-align: center;">
+        <img src="../../static/assets/img/pineapple-1704339_1280.jpg"
+            class="img-fluid" alt="Marketing Image"
+            style="width: 100%; height: 50vh; object-fit: cover; border-radius: 10px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);">
+    </div>
+
+    <!-- Text Section -->
+    <div class="col-lg-6 order-2 order-lg-1 content" style="flex: 1; padding-left: 50px;">
+        <h3 style="font-size: 28px; font-weight: bold; color: #333;">Our Digital Marketing Expertise</h3>
+        <p class="fst-italic" style="font-size: 18px; line-height: 1.8; color: #555;">
+We blend creativity and analytics to turn challenges into growth. Our data-driven strategies boost your brand’s online presence with measurable results. With over a decade of experience, we craft tailored solutions using cutting-edge technology and market insights. More than tactics, we build lasting partnerships for long-term success in the evolving digital world."**
+
+        </p>
+        <a href="#contact" style="display: inline-block; padding: 12px 25px; background-color: #ffcc00; color: grey;
+            border-radius: 5px; text-decoration: none; font-weight: bold; transition: 0.3s;"
+            onmouseover="this.style.backgroundColor='#ffcc00'"
+            onmouseout="this.style.backgroundColor='#ffcc00'">
+            Learn More
+        </a>
+    </div>
+
+</div>
+
+       </section><!-- /About Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="../../static/assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="../../static/assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="../../static/assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="../../static/assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="../../static/assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="../../static/assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="../../static/assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="../../static/assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100" style="width:90vh;border-radius: 50px"><img src="../../static/assets/img/internet-4463031_1280.jpg" alt=""></div>
+          <div class="col-lg-6">
+
+            <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-archive flex-shrink-0"></i>
+              <div>
+                <h4>Driving Digital Excellence</h4>
+                <p>At GP, we craft innovative strategies that make your brand shine in the digital world. With creativity and precision, we ensure your business leads, not follows.</p>
+              </div>
+            </div><!-- End Features Item-->
+
+            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-basket flex-shrink-0"></i>
+              <div>
+                <h4>Tailored for Your Success </h4>
+                <p>Your goals are our priority. GP delivers results-driven marketing solutions that amplify your reach and grow your brand’s impact.</p>
+              </div>
+            </div><!-- End Features Item-->
+
+            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-broadcast flex-shrink-0"></i>
+              <div>
+                <h4>Your Online Edge</h4>
+                <p>Stand out effortlessly with GP. From SEO to social media, we empower your business to cut through the noise and thrive online.</p>
+              </div>
+            </div><!-- End Features Item-->
+
+            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-camera-reels flex-shrink-0"></i>
+              <div>
+                <h4>Making Connections That Count</h4>
+                <p>At GP, we go beyond just marketing. We build meaningful connections between your brand and your audience, ensuring every campaign feels personal, impactful, and unforgettable.</p>
+              </div>
+            </div><!-- End Features Item-->
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Check our Services</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-activity"></i>
+              </div>
+              <a href="" class="stretched-link">
+                <h3>Search Engine Optimization</h3>
+              </a>
+                <p style="color: black;font-weight: bold">Improving website visibility in search engine results through keyword optimization, content enhancement, technical fixes, and link building strategies.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="" class="stretched-link">
+                                <h3>Pay-Per-Click (PPC) Advertising </h3>
+
+              </a>
+                <p style="color: black;font-weight: bold"> Managing targeted ad campaigns on platforms like Google Ads and social media where clients only pay when users click on their ads.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-easel"></i>
+              </div>
+              <a href="" class="stretched-link">
+                <h3>Social Media Management </h3>
+              </a>
+                <p style="font-weight: bolder;color: black">Creating, scheduling, and monitoring content across social platforms, engaging with followers, and building brand presence online.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-bounding-box-circles"></i>
+              </div>
+              <a href="" class="stretched-link">
+              <h3>Content Marketing</h3>
+              </a>
+                <p style="font-weight: bold;color: black">Developing valuable blog posts, articles, videos, infographics, and other content that attracts and engages target audiences.</p>
+              <a href="service.html" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-calendar4-week"></i>
+              </div>
+              <a href="service.html" class="stretched-link">
+                <h3>Email Marketing</h3>
+              </a><p style="color: black;font-weight: bold"> Creating strategic email campaigns to nurture leads, promote offers, and maintain customer relationships through personalized messaging.</p>
+              <a href="" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-chat-square-text"></i>
+              </div>
+              <a href="" class="stretched-link">
+                <h3>Web Design & Development</h3>
+              </a><p style="font-weight: bold;color: black">Building responsive, user-friendly websites optimized for conversions and implementing analytics tracking to measure marketing performance.</p>
+              <a href="" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src="../../static/assets/img/cta-bg.jpg" alt="">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>Call To Action</h3>
+              <p>"Take your business to new heights with our expert digital marketing solutions! Whether you’re looking to increase traffic, boost engagement, or drive conversions, our tailored strategies are designed to deliver results. Don’t wait—click below to start growing your brand today!"</p>
+
+              <a class="cta-btn" href="#">Call To Action</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Check our Portfolio</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-product">Card</li>
+            <li data-filter=".filter-branding">Web</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="../../static/assets/img/portfolio1/app-8764508_1280.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 1</h4>
+                <p>We create amazing apps for your business.</p>
+                <a href="../../static/assets/img/portfolio1/apps-426559_1280.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="../../static/assets/img/portfolio1/ai-generated-8702904_1280.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Product 1</h4>
+                <p>Artificial Intelligence in action.</p>
+                <a href="../../static/assets/img/portfolio1/computer-8779036_1280.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="../../static/assets/img/portfolio1/digital-8560051_1280.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Branding 1</h4>
+                <p>Good branding skills</p>
+                <a href="../../static/assets/img/portfolio1/computer-8779036_1280.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="../../static/assets/img/portfolio1/mobile-1087845_1280.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 2</h4>
+                <p>Expanding the social space.</p>
+                <a href="../../static/assets/img/portfolio1/monitor-1307227_1280.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="../../static/assets/img/portfolio1/ai-generated-8894582_1280.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Product 2</h4>
+                <p>Specially designed apps.</p>
+                <a href="../../static/assets/img/portfolio1/Businessmen%20point%20to%20successful%20business%20growth%20plans,%20ladder%20of%20success,%20action%20planning%20and%20long-term%20business%20goals_.jpeg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="../../static/assets/img/portfolio1/Enter%20the%20Digital%20Era%20with%20Netzila%20Technologies%20-%20Tailored%20Web%20Development%20Services.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Branding 2</h4>
+                <p>Good branding skills</p>
+                <a href="../../static/assets/img/portfolio1/Majestic%20Media%20Solutions.jpeg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="../../static/assets/img/portfolio1/συμβουλοι%20digital%20marketing%20_%20digitalstrategist_gr.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>Great Communication</p>
+                <a href="../../static/assets/img/portfolio1/smartphone-6701409_1280.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="../../static/assets/img/internet-4463031_1280.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>SEO</h4>
+                <p>Search engine organisation</p>
+                <a href="../../static/assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="../../static/assets/img/pineapple-1704339_1280.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Website Development</h4>
+                <p>Cool websites</p>
+                <a href="../../static/assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 align-items-center justify-content-between">
+
+          <div class="col-lg-5">
+            <img src="../../static/assets/img/stats-img.jpg" alt="" class="img-fluid">
+          </div>
+
+          <div class="col-lg-6">
+
+            <h3 class="fw-bold fs-2 mb-3">Check us out!</h3>
+            <p style="color: black;font-family:cursive ">
+              Our Work
+
+At GP, We specialize in creating engaging digital experiences through web design, SEO, and social media marketing. Our portfolio showcases projects that enhance brand visibility and drive results. Explore our work and let’s create something amazing together!
+            </p>
+
+            <div class="row gy-4">
+
+              <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <i class="bi bi-emoji-smile flex-shrink-0"></i>
+                  <div>
+                    <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Happy Clients</strong> <span></span></p>
+                  </div>
+                </div>
+              </div><!-- End Stats Item -->
+
+              <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <i class="bi bi-journal-richtext flex-shrink-0"></i>
+                  <div>
+                    <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Projects</strong> <span></span></p>
+                  </div>
+                </div>
+              </div><!-- End Stats Item -->
+
+              <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <i class="bi bi-headset flex-shrink-0"></i>
+                  <div>
+                    <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Hours Of Support</strong> <span></span></p>
+                  </div>
+                </div>
+              </div><!-- End Stats Item -->
+
+              <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <i class="bi bi-people flex-shrink-0"></i>
+                  <div>
+                    <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Hard Workers</strong> <span></span></p>
+                  </div>
+                </div>
+              </div><!-- End Stats Item -->
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section dark-background">
+
+      <img src="../../static/assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="../../static/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>As the CEO of Fonte, I can attest to GP's invaluable support in driving growth and delivering impactful results.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="../../static/assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>GP has been instrumental in my design journey, providing innovative tools and strategies that enhance my creativity and streamline my workflow. Their support has helped me deliver impactful designs that truly resonate with audiences.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="../../static/assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>GP has greatly supported my business by providing creative and effective marketing strategies. Their expertise has helped me attract more customers and grow my store's success.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="../../static/assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>GP has been a game-changer for me as a freelancer. Their innovative tools and strategies have helped me attract clients, streamline my workflow, and deliver exceptional results.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="../../static/assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>"GP has been a pivotal partner in my entrepreneurial journey. Their innovative strategies and expert guidance have helped me grow my business, reach new markets, and achieve lasting success.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <p>our Team</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="../../static/assets/img/team/team-1.jpg" class="img-fluid" alt="">
+<!--                <div class="social">-->
+<!--                  <a href=""><i class="bi bi-twitter-x"></i></a>-->
+<!--                  <a href=""><i class="bi bi-facebook"></i></a>-->
+<!--                  <a href=""><i class="bi bi-instagram"></i></a>-->
+<!--                  <a href=""><i class="bi bi-linkedin"></i></a>-->
+<!--                </div>-->
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="../../static/assets/img/team/team-2.jpg" class="img-fluid" alt="">
+<!--                <div class="social">-->
+<!--                  <a href=""><i class="bi bi-twitter-x"></i></a>-->
+<!--                  <a href=""><i class="bi bi-facebook"></i></a>-->
+<!--                  <a href=""><i class="bi bi-instagram"></i></a>-->
+<!--                  <a href=""><i class="bi bi-linkedin"></i></a>-->
+<!--                </div>-->
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="../../static/assets/img/team/team-3.jpg" class="img-fluid" alt="">
+<!--                <div class="social">-->
+<!--                  <a href=""><i class="bi bi-twitter-x"></i></a>-->
+<!--                  <a href=""><i class="bi bi-facebook"></i></a>-->
+<!--                  <a href=""><i class="bi bi-instagram"></i></a>-->
+<!--                  <a href=""><i class="bi bi-linkedin"></i></a>-->
+<!--                </div>-->
+              </div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="../../static/assets/img/team/team-4.jpg" class="img-fluid" alt="">
+<!--                <div class="social">-->
+<!--                  <a href=""><i class="bi bi-twitter-x"></i></a>-->
+<!--                  <a href=""><i class="bi bi-facebook"></i></a>-->
+<!--                  <a href=""><i class="bi bi-instagram"></i></a>-->
+<!--                  <a href=""><i class="bi bi-linkedin"></i></a>-->
+<!--                </div>-->
+              </div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Contact Us</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+          <iframe style="border:0; width: 100%; height: 270px;"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8133716611305!2d36.82313137352207!3d-1.2860034356227905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d7e72fe6e5%3A0x7b34320441ee62ee!2sKencom%20House!5e0!3m2!1sen!2ske!4v1741937002440!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div><!-- End Google Maps -->
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>Kencom House</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+254 711 115 118</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>gp@gmail.com</p>
+              </div>
+            </div><!-- End Info Item -->
+         <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="600">
+<!--                                        <i class="bi bi-envelope flex-shrink-0"></i>-->
+                 <i class="bi bi-cup-hot flex-shrink-0"></i>
+
+                     <div>
+                           <a style="padding:20px;background-color:rgba(240,168,13,0.85);border-radius: 50px;color: black" class="button" href="{% url 'mpesa_payment' %}">Buy us a Coffee</a>
+                    </div>
+         </div>
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="700">
+              <i class="bi bi-chat-heart flex-shrink-o"></i>
+              <div>
+                 <button style="padding:20px;background-color:rgba(240,168,13,0.85);border-radius: 50px;color: black" onclick="window.open('https://chatbot.hellotars.com/conv/4oxK1r', '_blank')">Chat with Us</button>
+              </div>
+            </div>
+             </div>
+          <div class="col-lg-8">
+            <form style="color: black; background-color: rgba(240,168,13,0.85);
+             margin: 20px auto; padding: 20px;
+             max-width: 500px; border-radius: 20px;"
+
+                  action="" method="POST">
+              {% csrf_token %}
+              {{ form }}
+              <button style="margin-top: 20px" class="btn btn-success" type="submit">Send Message</button>
+            </form>
+
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">GP</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>Kencom House</p>
+              <p>10th Floor</p>
+              <p class="mt-3"><strong>Phone:</strong> <span>+254 7111 114</span></p>
+              <p><strong>Email:</strong> <span>gp@gmail.com</span></p>
+<!--                           <button onclick="window.open('https://chatbot.hellotars.com/conv/4oxK1r', '_blank')">Chat with Us</button>-->
+
+            </div>
+           <div class="social-links d-flex mt-4">
+  <a href="https://x.com/Edu_Tush001?s=08"
+     style="display: inline-block; font-size: 20px; color: #555; background: #f1f1f1; padding: 10px; border-radius: 50%; transition: all 0.3s ease-in-out; margin-right: 10px;">
+    <i class="bi bi-twitter-x"></i>
+  </a>
+
+  <a href="https://www.facebook.com/profile.php?id=61573095604873&mibextid=rS40aB7S9Ucbxw6v"
+     style="display: inline-block; font-size: 20px; color: #555; background: #f1f1f1; padding: 10px; border-radius: 50%; transition: all 0.3s ease-in-out; margin-right: 10px;">
+    <i class="bi bi-facebook"></i>
+  </a>
+
+  <a href="https://www.instagram.com/_zoxo_99/"
+     style="display: inline-block; font-size: 20px; color: #555; background: #f1f1f1; padding: 10px; border-radius: 50%; transition: all 0.3s ease-in-out; margin-right: 10px;">
+    <i class="bi bi-instagram"></i>
+  </a>
+
+  <a href="YOUR_LINKEDIN_URL"
+     style="display: inline-block; font-size: 20px; color: #555; background: #f1f1f1; padding: 10px; border-radius: 50%; transition: all 0.3s ease-in-out; margin-right: 10px;">
+    <i class="bi bi-linkedin"></i>
+  </a>
+             <div>
+</div>
+
+</div>
+
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Web Design</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Web Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Product Management</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Marketing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-12 footer-newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+
+<form method="POST">
+    {% csrf_token %}
+    <label for="email">Email:</label>
+    {{ form.email }}
+    <button type="submit">Subscribe</button>
+</form>
+
+{% if messages %}
+    {% for message in messages %}
+        <p>{{ message }}</p>
+    {% endfor %}
+{% endif %}
+
+
+<!--            <h4>Our Newsletter</h4>-->
+<!--            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>-->
+<!--            <form action="forms/newsletter.php" method="post" class="php-email-form">-->
+<!--              {% csrf_token %}-->
+<!--              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>-->
+<!--              <div class="loading">Loading</div>-->
+<!--              <div class="error-message"></div>-->
+<!--              <div class="sent-message">Your subscription request has been sent. Thank you!</div>-->
+<!--            </form>-->
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="container text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">GP</strong> <span>All Rights Reserved</span></p>
+        <div class="credits">
+
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  {% endblock %}
